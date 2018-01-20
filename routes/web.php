@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@index')->name('index');
+Route::post('send', 'HomeController@send')->name('send');
+Route::get('/{message}', 'HomeController@find')->name('find');
